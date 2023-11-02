@@ -8,6 +8,8 @@
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -28,4 +30,30 @@ a {
 
 h1 {
   font-family: 'Tangerine', cursive;
+}
+
+.slick-slider {
+  height: 700px;
+}
+
+.slick-list, .slick-track, .slick-slide {
+  height: 100%;
+}
+
+.slick-next, .slick-prev {
+  width: 30px !important;
+  overflow: hidden;
+  height: auto;
+  right: 30px;
+}
+
+.slick-prev {
+  left: 30px;
+  z-index: 22;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  content: url('./assets/images/arrows.png');
+  overflow: hidden;
 }
