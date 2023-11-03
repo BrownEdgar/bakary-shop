@@ -1,7 +1,6 @@
 @import "./_colors";
 
 .HomeSlide {
-  height: 800px;
   width: 100%;
   .slide-itemm {
     background-position: center;
@@ -9,21 +8,21 @@
     background-size: contain 100%;
     object-fit: cover;
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: flex !important;
+    justify-content: center;
     color: #fff;
     align-items: center;
     flex-direction: column;
     padding: 1em;
     position: relative;
-    img {
+    img {`
       position: absolute;
       inset: 0 0 0 0;
-      object-fit: contain;
-      width: 100%;
+      object-fit: cover;
     }
     h1 {
-      font-size: 5em;
+      font-size: 4.5em;
       letter-spacing: 2px;
       color: #fff;
     }
@@ -32,7 +31,6 @@
       z-index: 2;
       margin: 0 auto;
       text-align: center;
-      padding-top: 15%;
     }
   }
 }

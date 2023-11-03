@@ -8,7 +8,7 @@ export default function HomeSlide() {
   const slidesData = useSelector(state => state.slides);
   console.log(slidesData)
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

@@ -13,10 +13,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-@font-face {
-  font-family: 'Tangerine', cursive;
-  src: url('./assets/fonts/Tangerine-Bold.ttf');
-  src: url('./assets/fonts/Tangerine-Regular.ttf');
+.main {
+  position: relative;
 }
 
 ul {
@@ -29,11 +27,18 @@ a {
 }
 
 h1 {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
 }
 
 .slick-slider {
   height: 700px;
+  background-color: greenyellow;
+}
+
+
+.slick-slide>div {
+  height: 100%;
 }
 
 .slick-list, .slick-track, .slick-slide {
@@ -41,7 +46,7 @@ h1 {
 }
 
 .slick-next, .slick-prev {
-  width: 30px !important;
+  width: 29px !important;
   overflow: hidden;
   height: auto;
   right: 30px;
@@ -55,5 +60,10 @@ h1 {
 .slick-next::before,
 .slick-prev::before {
   content: url('./assets/images/arrows.png');
-  overflow: hidden;
+
+}
+
+.slick-next::before {
+  position: relative;
+  right: 25px
 }
