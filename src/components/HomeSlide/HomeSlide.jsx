@@ -12,7 +12,8 @@ export default function HomeSlide() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true
   };
   return (
     <div className='HomeSlide'>
@@ -20,7 +21,7 @@ export default function HomeSlide() {
         {slidesData.map(elem => {
           return (
             <div className="slide-itemm" key={elem.id}>
-              <img src={elem.image} alt="" />
+              <img src={elem.image} alt="" loading='lazy' />
               <div className="slide-content">
                 <h1>{elem.title}</h1>
                 <p>{elem.desc}</p>

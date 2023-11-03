@@ -1,0 +1,40 @@
+@import "./_colors";
+@import "./_mixins";
+
+.News {
+  padding: 30px;
+  text-align: center;
+  .Title {
+    @include TitleRools(40px, center);
+  }
+  &-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+    & > .items {
+      flex: 0 0 23%;
+      img {
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+      }
+      h3 {
+        margin: 16px auto;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 8px 20px;
+        border: 2px solid #444;
+        background: transparent;
+        cursor: pointer;
+        margin-top: 30px;
+        width: 140px;
+        font-weight: 700;
+      }
+    }
+  }
+}

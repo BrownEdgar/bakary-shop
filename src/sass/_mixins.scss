@@ -1,0 +1,8 @@
+@import "./_colors";
+
+@mixin TitleRools($size, $aligin) {
+  font-size: $size;
+  font-family: "Lobster", sans-serif;
+  text-align: $aligin;
+  color: $title-color-pink;
+}

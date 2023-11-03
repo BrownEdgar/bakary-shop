@@ -9,6 +9,7 @@
 
 body {
   max-width: 1440px;
+  line-height: 1.4;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
@@ -33,7 +34,7 @@ h1 {
 
 .slick-slider {
   height: 700px;
-  background-color: greenyellow;
+  background: transparent;
 }
 
 

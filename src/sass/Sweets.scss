@@ -1,0 +1,37 @@
+@import "./_colors";
+@import "./_mixins";
+
+.ProductList {
+  padding: 30px;
+  h1 {
+    @include TitleRools(40px, center);
+    margin-bottom: 30px;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    .product {
+      margin: 10px;
+      flex: 0 0 23%;
+      text-align: center;
+      img {
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+      }
+      .product-info {
+        h3 {
+          @include TitleRools(34px, center);
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 16px;
+          text-align: center;
+          color: $main-text-color;
+        }
+      }
+    }
+  }
+}

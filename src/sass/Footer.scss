@@ -1,0 +1,22 @@
+@import "./_colors";
+
+footer {
+  margin-top: 50px;
+  background-color: $footer-bg;
+  color: #fff;
+
+  .bottom {
+    height: 80px;
+    display: flex;
+    padding: 1em 2em;
+    align-items: center;
+    background-color: $footer-bottom-bg;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 30px;
+    p {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "./_colors";
+@import "./_mixins";
+.Fcontent {
+  display: flex;
+  width: 96%;
+  margin: 0px auto;
+  padding: 30px;
+
+  & > .items {
+    flex: 0 0 25%;
+    padding: 12px;
+    text-align: left;
+    h2 {
+      @include TitleRools(34px, left);
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    &_location {
+      & > p {
+        margin-bottom: 40px;
+      }
+      address {
+        p {
+          margin-bottom: 10px;
+          width: 80%;
+          & span:nth-child(1) {
+            color: $title-color-pink;
+            font-weight: 600;
+          }
+          & span:nth-child(2) {
+            float: right;
+          }
+        }
+      }
+      & > #icons {
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        li {
+          background-color: hsla(0, 0%, 13%, 0.7);
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
